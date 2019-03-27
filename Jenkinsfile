@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'Dev'
-    }
-
-  }
+  agent any
   stages {
     stage('codepull') {
       steps {
