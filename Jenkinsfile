@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        bat 'curl -v -u admin:admin123 --upload-file test.zip http://localhost:8081/repository/suntrust/test.zip'
+        bat 'C:\Windows\System32\curl.exe -v -u admin:admin123 --upload-file test.zip http://localhost:8081/repository/suntrust/test.zip'
       }
     }
   }
