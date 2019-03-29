@@ -13,7 +13,7 @@ pipeline {
     }
     stage('deploy') {
       steps {
-        bat '#nexus.bat'
+        sh '#!/bin/bash'
       }
     }
     stage('git-tag') {
