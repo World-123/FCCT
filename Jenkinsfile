@@ -8,7 +8,7 @@ pipeline {
     }
     stage('build') {
       steps {
-        bat '\'"C:\\Program Files\\7-Zip\\7z.exe" a -r test.zip -w . -mem=AES256\''
+        bat '"C:\\Program Files\\7-Zip\\7z.exe" a -r test.zip -w . -mem=AES256'
       }
     }
     stage('git-tag') {
